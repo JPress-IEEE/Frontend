@@ -1,0 +1,8 @@
+.locationsec .bgimagelazyload{
+    background-image: url(../../../public/img.png);
+}
+@media (max-width: 900px) {
+    .li-none{
+        display: none;
+    }
+  }

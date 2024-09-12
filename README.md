@@ -1,99 +1,36 @@
-# JPress Frontend
-
-Welcome to the JPress Frontend repository! This project provides the user-facing interface for a job matching application. It includes features like user profiles, job listings, chat, notifications, offers, recommendations, and feedback for both clients and applicants.
-
-## Features
-
-- **User Profiles**: Manage profiles for clients and applicants.
-- **Job Listings**: Browse and apply to job requests.
-- **Chat System**: Real-time messaging and video calls between users.
-- **Notifications**: Instant alerts for updates and activities.
-- **Offers & Services**: Applicants can send offers; clients can post requests and view offers.
-- **Recommendations**: Tailored suggestions for applicants based on job requests.
-- **Feedback System**: Rate and review clients and applicants.
-
-## Technology Stack
-
-- **Languages**:  JavaScript
-- **Framework**: React (Next.js )
-- **State Management**: Redux / Context API
-- **Routing**:  Next.js routing
-- **Styling**: Tailwind CSS 
-- **API Communication**: Fetch API
-- **Real-Time**: Socket.io (for chat & notifications)
-- **Testing**: Jest / React Testing Library
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js / NPM
-- JPress Backend API
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Installation
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/JPress-IEEE/Frontend.git
-    cd Frontend
-    ```
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-2. **Install Dependencies**:
-    ```bash
-    npm install
-    ```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-3. **Set Up Environment Variables**:  
-   Create a `.env` file with:
-    ```plaintext
-    NEXT_PUBLIC_API_BASE_URL=
-    NEXT_PUBLIC_SOCKET_URL=
-    NEXT_PUBLIC_GOOGLE_CLIENT_ID=
-    NEXT_PUBLIC_FACEBOOK_APP_ID=
-    NEXT_PUBLIC_LINKEDIN_CLIENT_ID=
-    ```
+## Learn More
 
-4. **Run the Development Server**:
-    ```bash
-    npm run dev
-    ```
+To learn more about Next.js, take a look at the following resources:
 
-5. **Build for Production**:
-    ```bash
-    npm run build
-    npm run start
-    ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Testing
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- **Run All Tests**:
-    ```bash
-    npm run test
-    ```
+## Deploy on Vercel
 
-- **Run Specific Tests**:
-    ```bash
-    npm test -- <path-to-test-file>
-    ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- **Test Coverage Report**:
-    ```bash
-    npm run test:coverage
-    ```
-
-### API Communication
-
-The frontend interacts with the backend API. Make sure to set the correct `NEXT_PUBLIC_API_BASE_URL` in the `.env` file to point to the backend service.
-
-## Contributing
-
-We welcome contributions to JPress:
-
-1. **Fork the Repository**: Create a personal copy on GitHub.
-2. **Create a Branch**: Develop features or fixes in a new branch.
-3. **Commit Changes**: Write clear and detailed commit messages.
-4. **Submit a Pull Request**: Provide a clear description of the changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
