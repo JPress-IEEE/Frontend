@@ -13,6 +13,8 @@ export default function Log_in() {
     e.preventDefault();
     // Clear previous error
     setError("");
+    const clientId = "your_client_id"; // استبدل بذلك المعرف الفعلي
+    navigate("/post_service", { state: { clientId } });
   
     try {
       const response = await fetch('http://localhost:5175/api/auth/login', {
