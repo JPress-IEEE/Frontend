@@ -70,7 +70,7 @@ export default function Sign({ setIsLoggedIn }) {
         localStorage.setItem("refreshToken", refreshToken);
         localStorage.setItem("clientId", clientId);
 
-        // setIsLoggedIn(true);
+        setIsLoggedIn(true);
         navigate("/");
     } catch (error) {
         console.error(error);

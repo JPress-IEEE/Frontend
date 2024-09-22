@@ -83,8 +83,8 @@ export default function Tasker({ setIsLoggedIn }) {
       
       const applicantData = await applicantResponse.json();
       localStorage.setItem("applicantId", applicantData._id);
-      alert("Sign up successful!");
-      setIsLoggedIn(true);
+      // alert("Sign up successful!");
+      // setIsLoggedIn(true);
       navigate("/");
     } catch (error) {
       console.error("Error:", error);
