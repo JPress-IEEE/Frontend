@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "John Wick",
+      "role": "Web designer",
+      "profilePic": "https://placehold.co/100x100",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "role": "Graphic designer",
+      "profilePic": "https://placehold.co/100x100",
+      "rating": 4,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+    },
+    {
+        "id": 1,
+        "name": "John Wick",
+        "role": "Web designer",
+        "profilePic": "https://placehold.co/100x100",
+        "rating": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+      },
+      {
+        "id": 2,
+        "name": "Jane Doe",
+        "role": "Graphic designer",
+        "profilePic": "https://placehold.co/100x100",
+        "rating": 4,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+      },
+      {
+        "id": 1,
+        "name": "John Wick",
+        "role": "Web designer",
+        "profilePic": "https://placehold.co/100x100",
+        "rating": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+      },
+      {
+        "id": 2,
+        "name": "Jane Doe",
+        "role": "Graphic designer",
+        "profilePic": "https://placehold.co/100x100",
+        "rating": 4,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum."
+      }
+  ]
+  

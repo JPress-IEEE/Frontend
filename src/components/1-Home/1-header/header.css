@@ -1,0 +1,292 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.header .navbar .logo img {
+  width: 203px;
+  height: 60px;
+}
+
+.header .navbar nav ul {
+  display: flex;
+  gap: 32px;
+}
+.header .navbar nav ul li {
+  list-style: none;
+}
+.header .navbar nav ul li a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.header .navbar nav ul li a:hover {
+  color: var(--orange);
+}
+.header .navbar .btn {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.header .navbar .btn .login-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--orange);
+  background-color: var(--w);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.header .navbar .btn .login-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.header .navbar .btn .Taske-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  background-color: var(--w);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.header .navbar .btn .Taske-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* /////////// */
+
+.menus {
+  font-size: 25px;
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  nav ul {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translateY(-200%);
+    transition: 0.3s ease-in-out;
+  }
+  nav ul li {
+    margin: 15px;
+  }
+  .menus {
+    display: flex;
+  }
+  nav ul.active {
+    transform: translateY(-0px);
+  }
+}
+
+@media (max-width: 1120px) {
+  .header .navbar .btn button {
+    padding: 10px 23px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header .navbar .btn button {
+    display: none;
+  }
+  .navbar {
+    padding: 20px 25px;
+  }
+}
+
+.header .navbar .btn img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.header .navbar .btn .icon {
+  display: flex;
+  gap: 25px;
+}
+
+.header .navbar .btn .icon i {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+.header .navbar .btn .icon i:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* Styling for the popup */
+.notification-popup {
+  position: absolute;
+  top: 80px; /* Adjust based on the height of your header */
+  right: 175px; /* Aligned to the right of the screen */
+  width: 40%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.453);
+}
+
+/* Styling for the content inside the popup */
+
+/* Arrow pointing to the icon */
+.arrow-up {
+  position: absolute;
+  top: -10px;
+  right: 20px; /* Align the arrow with the icon */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(235, 82, 21); /* Arrow color same as popup background */
+}
+
+.notification-popup .messages-container {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-popup .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.notification-popup .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.notification-popup .mark-all-read {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--orange);
+}
+.fa-check-double {
+  color: var(--orange);
+  font-size: 22px;
+}
+
+.notification-popup .messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-popup .message {
+  padding: 1rem;
+  border: 1px solid var(--orange);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 00.3s ease-in-out;
+}
+
+.notification-popup .message:hover {
+  background-color: rgba(238, 242, 246, 1);
+}
+
+.notification-popup .message-content {
+  display: flex;
+  align-items: center;
+}
+
+.notification-popup .avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.message-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-author {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.message-text {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.notification-popup .message-time {
+  font-size: 15px;
+  font-weight: 400;
+
+  color: rgba(147, 157, 168, 1);
+}
+
+.notification-popup .footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.notification-popup .show-all {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.notification-popup .show-all i {
+  color: #fff;
+  background-color: var(--orange);
+  border-radius: 50%;
+  padding: 7px 11px;
+}
+
+.notification-popup .show-all:hover {
+  background-color: var(--accent-hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,73 @@
+.Offers .bg-card {
+    background-color: #ffffff;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.347);  
+     margin: 20px;
+
+    }
+   .Offers_1{
+    margin-top: 100px;
+   }
+  .Offers .text-mutedd {
+    color: var(--blue);
+    font-weight: 700;
+  }
+
+  .postedTime{
+ font-size: 16px;
+font-weight: 400;
+ 
+color: rgba(147, 157, 168, 1);
+  }
+  
+  .Offers .text  {
+ font-size: 24px;
+font-weight: 600;
+color: var(--orange);
+margin: 15px 0;
+
+  }
+  strong{
+ font-weight: 600;
+color: rgba(147, 157, 168, 1);
+
+
+  }
+  .Offers .font-bold {
+    font-weight: 700;  
+  }
+  
+  .Offers .text-lg {
+    font-size: 1.25rem; 
+  }
+  
+  .Offers .text-muted-foreground {
+    color: rgba(147, 157, 168, 1);
+    ;  
+  }
+  
+  .Offers .mt-4 {
+    margin-top: 16px;  
+  }
+  
+  .Offers .flex {
+    display: flex;  
+  }
+  
+  .Offers .justify-between {
+    justify-content: space-between;  
+  }
+  
+  .Offers .items-center {
+    align-items: center; 
+  }
+  
+  .Offers .rounded-lg {
+    border-radius: 8px;  
+  }
+  
+  .Offers .shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }
+  

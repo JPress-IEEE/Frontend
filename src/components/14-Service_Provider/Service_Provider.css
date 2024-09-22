@@ -1,0 +1,34 @@
+.Service_Provider button {
+  padding: 0.5rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+  transition: 0.3s ease-in-out;
+}
+.Service_Provider button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.Service_Provider .boxx {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.285); /* التظليل */
+}
+
+.Service_Provider h2 {
+  font-size: 20px;
+  font-weight: 600;
+
+  color: var(--blue);
+}
+
+.Service_Provider p {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.Service_Provider .pr {
+  color: rgba(147, 157, 168, 1);
+  font-size: 12px;
+  font-weight: 600;
+}

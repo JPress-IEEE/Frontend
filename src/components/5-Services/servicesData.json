@@ -1,0 +1,221 @@
+[
+    {
+      "title": "Creative Services 1",
+      "description": "First container description.",
+      "services": [
+        {
+          "title": "Web Development",
+          "description": "Build responsive and modern websites.",
+          "imgSrc": "img/service.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+          "title": "Mobile Apps",
+          "description": "Create mobile applications for Android and iOS.",
+          "imgSrc": "img/service-1.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-2.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+      ]
+    },
+    
+
+    
+    {
+      "title": "Creative Services 2",
+      "description": "Second container description.",
+      "services": [
+        {
+          "title": "UI/UX Design",
+          "description": "Design user-friendly interfaces and experiences.",
+          "imgSrc": "img/service-3.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-4.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-5.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+      ]
+    },
+
+    {
+        "title": "Creative Services 2",
+        "description": "Second container description.",
+        "services": [
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-6.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-7.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          } ,
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-8.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+        ]
+      },
+          
+    {
+      "title": "Creative Services 2",
+      "description": "Second container description.",
+      "services": [
+        {
+          "title": "UI/UX Design",
+          "description": "Design user-friendly interfaces and experiences.",
+          "imgSrc": "img/service-9.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-10.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-11.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+      ]
+    },
+        
+    {
+      "title": "Creative Services 2",
+      "description": "Second container description.",
+      "services": [
+        {
+          "title": "UI/UX Design",
+          "description": "Design user-friendly interfaces and experiences.",
+          "imgSrc": "img/service-12.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-13.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-14.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+      ]
+    },
+        
+    {
+      "title": "Creative Services 2",
+      "description": "Second container description.",
+      "services": [
+        {
+          "title": "UI/UX Design",
+          "description": "Design user-friendly interfaces and experiences.",
+          "imgSrc": "img/service-15.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-16.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-17.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+      ]
+    },
+        
+    {
+      "title": "Creative Services 2",
+      "description": "Second container description.",
+      "services": [
+        {
+          "title": "UI/UX Design",
+          "description": "Design user-friendly interfaces and experiences.",
+          "imgSrc": "img/service-18.png",
+          "text_1_p": "Text 1",
+          "text_2_p": "Text 2",
+          "text_3_p": "Text 3"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-19.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "Design user-friendly interfaces and experiences.",
+            "imgSrc": "img/service-20.png",
+            "text_1_p": "Text 1",
+            "text_2_p": "Text 2",
+            "text_3_p": "Text 3"
+          }
+      ]
+    }
+  ]
+  

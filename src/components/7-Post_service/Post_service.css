@@ -1,0 +1,103 @@
+.Post_service .widget-form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 6px rgba(81, 81, 81, 0.141);
+}
+
+.Post_service .form-group {
+  margin-bottom: 16px;
+}
+
+.Post_service .form-label {
+  display: block;
+  margin-bottom: 8px;
+
+   font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: var(--blue);
+}
+
+.Post_service .form-input,
+.Post_service select {
+  width: 100%;
+  padding: 12px 0 12px 5px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: rgba(99, 130, 162, 1);
+
+   font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  background: rgba(252, 252, 253, 1);
+}
+
+.Post_service .text-helper {
+  font-size: 0.75rem;
+  color: var(--blue);
+   font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Post_service .checkbox-input {
+  margin-right: 8px;
+}
+
+.Post_service .checkbox-label {
+  color: var(--blue);
+   font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+
+.Post_service .submit-button {
+  width: 100%;
+  background-color: var(--orange);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  transition: 0.3s ease-in-out;
+   font-size: 16px;
+  font-weight: 600;
+}
+
+.Post_service .submit-button:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+@media (max-width: 750px) {
+  .Post_service .widget-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

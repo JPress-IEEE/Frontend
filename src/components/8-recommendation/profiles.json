@@ -1,0 +1,38 @@
+[
+    {
+      "name": "John Wick",
+      "title": "Web designer",
+      "image": "img/Review-1.jpeg",
+      "rating": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Jane Doe",
+      "title": "Graphic designer",
+      "image": "img/Review-1.jpeg",
+      "rating": 4,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Mike Smith",
+      "title": "Software developer",
+      "image": "img/Review-1.jpeg",
+      "rating": 5,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Mike Smith",
+        "title": "Software developer",
+        "image": "img/Review-1.jpeg",
+        "rating": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "Mike Smith",
+        "title": "Software developer",
+        "image": "img/Review-1.jpeg",
+        "rating": 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+  ]
+  

@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "John Wick",
+      "title": "Web designer",
+      "rating": 4,
+      "image": "https://placehold.co/100x100",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vest ."
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "title": "Graphic Designer",
+      "rating": 5,
+      "image": "https://placehold.co/100x100",
+      "description": "Donec ornare lorem sed nulla ultricies, nec facilisis libero fermentum."
+    },
+    {
+      "id": 3,
+      "name": "Sam Smith",
+      "title": "UI/UX Designer",
+      "rating": 3,
+      "image": "https://placehold.co/100x100",
+      "description": "Phasellus nec est nec arcu finibus bibendum nec sed massa."
+    }
+  ]
+  

@@ -1,0 +1,132 @@
+.services-container .bar {
+  margin: 50px 0;
+}
+.services-container .bar h2 {
+  margin-bottom: 20px;
+
+   font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  color: var(--blue);
+}
+
+.services-container .bar p {
+   font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(147, 157, 168, 1);
+}
+
+.services-container .services-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-container .service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.services-container .service-card:hover {
+  transform: scale(1.05);
+}
+
+.services-container .service-icon {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.services-container .text_1 {
+  padding: 20px;
+}
+.services-container .text_1 h3 {
+   font-size: 19px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: var(--blue);
+}
+
+.services-container .text_1 p {
+   font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(147, 157, 168, 1);
+
+  border-bottom: 1px solid rgba(136, 136, 136, 0.625);
+  padding-bottom: 10px;
+}
+.services-container .text_2 {
+  padding: 0 20px 20px 20px;
+}
+
+.services-container .text_2 p {
+   font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: var(--blue);
+}
+
+/* /////////////// */
+
+.square {
+  position: relative;
+  width: 40%;
+  background-color: white;
+  border: 2px solid rgb(5, 14, 113);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.square .text {
+   font-size: 30px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  color: rgba(242, 106, 39, 1);
+}
+
+.corner {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(242, 106, 39, 1);
+  border: 1px solid black;
+}
+
+.corner:nth-child(1) {
+  top: -10px;
+  left: -10px;
+}
+
+.corner:nth-child(2) {
+  top: -10px;
+  right: -10px;
+}
+
+.corner:nth-child(3) {
+  bottom: -10px;
+  left: -10px;
+}
+
+.corner:nth-child(4) {
+  bottom: -10px;
+  right: -10px;
+}
+
+@media (max-width: 750px) {
+  .square {
+    width: 80%;
+  }
+}
