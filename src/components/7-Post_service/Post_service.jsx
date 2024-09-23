@@ -1,79 +1,56 @@
 import { useNavigate } from "react-router-dom";
 import "./Post_service.css";
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 export default function Post_service({ addNewPost }) {
   const [serviceName, setServiceName] = useState("");
   const [serviceDescription, setServiceDescription] = useState("");
-  const [location, setLocation] = useState(""); // تم إصلاح المتغير هنا
+  const [location, setLocation] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
-  const [termsAccepted, setTermsAccepted] = useState(false);
 
   const [errors, setErrors] = useState({
     serviceName: "",
     serviceDescription: "",
     location: "",
-    terms: "",
   });
 
   const navigate = useNavigate();
-  const clientId = location.state?.clientId;
 
   useEffect(() => {
-    if (serviceName && serviceDescription && location && termsAccepted) {
+    if (serviceName && serviceDescription && location) {
       setIsFormValid(true);
     } else {
       setIsFormValid(false);
     }
-  }, [serviceName, serviceDescription, location, termsAccepted]);
+  }, [serviceName, serviceDescription, location]);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     let formErrors = {};
     if (!serviceName) formErrors.serviceName = "Please enter the service name.";
-    if (!serviceDescription) formErrors.serviceDescription = "Please enter the service description.";
+    if (!serviceDescription)
+      formErrors.serviceDescription = "Please enter the service description.";
     if (!location) formErrors.location = "Please select a location.";
-    if (!termsAccepted) formErrors.terms = "You must accept the terms.";
 
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
       return;
     }
 
-    try {
-      await fetch("http://localhost:5175/api/request", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          clientId, // Use the actual clientId
-          jobName: serviceName,
-          location,
-          description: serviceDescription,
-        }),
-      });
+    addNewPost({
+      serviceName,
+      serviceDescription,
+      location,
+    });
 
-      addNewPost({
-        serviceName,
-        serviceDescription,
-        location,
-      });
+    setServiceName("");
+    setServiceDescription("");
+    setLocation("");
+    setErrors({});
 
-      setServiceName("");
-      setServiceDescription("");
-      setLocation("");
-      setTermsAccepted(false);
-      setErrors({});
-
-      // Navigate to the recommendation page
-      navigate("/recommendation");
-    } catch (error) {
-      console.error("Error posting service:", error);
-      // Handle the error (show a message to the user, etc.)
-    }
+    // Navigate to the recommendation page
+    navigate("/recommendation");
   };
 
   return (
@@ -91,7 +68,7 @@ export default function Post_service({ addNewPost }) {
           <form className="widget-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="service-name" className="form-label">
-                Service Name
+                Service name
               </label>
               <input
                 type="text"
@@ -111,7 +88,7 @@ export default function Post_service({ addNewPost }) {
 
             <div className="form-group">
               <label htmlFor="service-description" className="form-label">
-                Service Description
+                Service description
               </label>
               <textarea
                 id="service-description"
@@ -152,17 +129,11 @@ export default function Post_service({ addNewPost }) {
             </div>
 
             <div className="form-group">
-              <input
-                type="checkbox"
-                id="terms"
-                className="checkbox-input"
-                checked={termsAccepted}
-                onChange={(e) => setTermsAccepted(e.target.checked)}
-              />
+              <input type="checkbox" id="terms" className="checkbox-input" />
               <label htmlFor="terms" className="checkbox-label">
-                The service does not contain any external communication means and is compatible with the terms of use.
+                The service does not contain any external communication means
+                and is compatible with the terms of use
               </label>
-              {errors.terms && <p className="error-message">{errors.terms}</p>}
             </div>
 
             <button type="submit" className="submit-button" disabled={!isFormValid}>
