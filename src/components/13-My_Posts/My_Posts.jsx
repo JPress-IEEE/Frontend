@@ -27,8 +27,11 @@ export default function My_Posts({ posts }) {
               <Link to="/My_Posts">
                 <p className="blue-heading section-title-style">My Posts</p>
               </Link>
-              <p className="blue-heading section-title-style">Notifications</p>
-              <p className="blue-heading section-title-style">Security</p>
+              <Link to="/Notifications">
+                <p className="blue-heading section-title-style">
+                  Notifications
+                </p>
+              </Link>              <p className="blue-heading section-title-style">Security</p>
               <p className="blue-heading section-title-style">Language</p>
             </div>
             <div className="language-selector-container">

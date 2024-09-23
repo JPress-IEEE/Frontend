@@ -1,6 +1,6 @@
-import   { useState } from 'react';
+import { useState } from "react";
 import "./Profile.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   // حالات لإدارة المدخلات
@@ -8,13 +8,13 @@ export default function Profile() {
   const [isEditingContact, setIsEditingContact] = useState(false);
   const [isEditingAddress, setIsEditingAddress] = useState(false);
 
-  const [name, setName] = useState('John Wick');
-  const [email, setEmail] = useState('Johnwick@gmail.com');
-  const [phone, setPhone] = useState('0115132543');
-  const [country, setCountry] = useState('Egypt');
-  const [city, setCity] = useState('Cairo');
-  const [jobTitle, setJobTitle] = useState('Product Designer');
-  const [image, setImage] = useState('img/Review-8.jpeg'); // الصورة
+  const [name, setName] = useState("John Wick");
+  const [email, setEmail] = useState("Johnwick@gmail.com");
+  const [phone, setPhone] = useState("0115132543");
+  const [country, setCountry] = useState("Egypt");
+  const [city, setCity] = useState("Cairo");
+  const [jobTitle, setJobTitle] = useState("Product Designer");
+  const [image, setImage] = useState("img/Review-8.jpeg"); // الصورة
 
   // لتغيير الصورة
   const handleImageChange = (e) => {
@@ -32,44 +32,35 @@ export default function Profile() {
     <div className="container">
       <div className="user-profile-card">
         <div className="sidebar-container">
-        <div className="hierarchical-container">
-        <div className="hierarchical-container">
-        </div>
-        <div className="content-wrapper">
-        <p className="blue-heading section-title-style blue-heading:first-child">
-        My profile          </p>
+          <div className="hierarchical-container">
+            <div className="hierarchical-container"></div>
+            <div className="content-wrapper">
+              <p className="blue-heading section-title-style blue-heading:first-child">
+                My profile{" "}
+              </p>
 
-        <Link to="/My_Posts">
-            <p className="blue-heading section-title-style blue-heading:first-child">
-            My Posts
-          </p>
-        </Link>
-      
-          <p className="blue-heading section-title-style">
-            Notifications
-          </p>
-          <p className="blue-heading section-title-style">
-            Security
-          </p>
-          <p className="blue-heading section-title-style">
-            Language
-          </p>
+              <Link to="/My_Posts">
+                <p className="blue-heading section-title-style blue-heading:first-child">
+                  My Posts
+                </p>
+              </Link>
+              <Link to="/Notifications">
+                <p className="blue-heading section-title-style">
+                  Notifications
+                </p>
+              </Link>
+
+              <p className="blue-heading section-title-style">Security</p>
+              <p className="blue-heading section-title-style">Language</p>
+            </div>
+            <div className="language-selector-container">
+              <p className="blue-text-snippet">English</p>
+              <p className="blue-text-snippet">Arabic</p>
+            </div>
+          </div>
+          <p className=" blue-heading section-title-style">Delete Account</p>
         </div>
-        <div className="language-selector-container">
-          <p className="blue-text-snippet">
-          English
-          </p>
-          <p className="blue-text-snippet">
-            Arabic
-          </p>
-        </div>
-      </div>
-      <p className=" blue-heading section-title-style">
-        Delete Account
-      </p>
-  
-        </div>
-{/* ///////////////////////// */}
+        {/* ///////////////////////// */}
         <div className="profile-card3">
           <div className="profile-card1">
             <div className="profile-card2">
@@ -78,13 +69,13 @@ export default function Profile() {
                   className="profile-image-circle"
                   src={image}
                   alt="Profile"
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: "pointer" }}
                 />
               </label>
               <input
                 id="imageUpload"
                 type="file"
-                style={{ display: 'none' }}
+                style={{ display: "none" }}
                 onChange={handleImageChange}
               />
 
@@ -108,14 +99,19 @@ export default function Profile() {
                   ) : (
                     <p className="elegant-text">{jobTitle}</p>
                   )}
-                  <p className="elegant-text1">{city}, {country}</p>
+                  <p className="elegant-text1">
+                    {city}, {country}
+                  </p>
                 </div>
               </div>
             </div>
-            <button className='edit' onClick={() => setIsEditingName(!isEditingName)}>
-            <i className="fa-solid fa-pen"></i>
+            <button
+              className="edit"
+              onClick={() => setIsEditingName(!isEditingName)}
+            >
+              <i className="fa-solid fa-pen"></i>
 
-              {isEditingName ? 'Save' : 'Edit'}
+              {isEditingName ? "Save" : "Edit"}
             </button>
           </div>
 
@@ -148,10 +144,13 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <button className='edit' onClick={() => setIsEditingContact(!isEditingContact)}>
-            <i className="fa-solid fa-pen"></i>
+            <button
+              className="edit"
+              onClick={() => setIsEditingContact(!isEditingContact)}
+            >
+              <i className="fa-solid fa-pen"></i>
 
-              {isEditingContact ? 'Save' : 'Edit'}
+              {isEditingContact ? "Save" : "Edit"}
             </button>
           </div>
 
@@ -184,9 +183,12 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <button className='edit' onClick={() => setIsEditingAddress(!isEditingAddress)}>
-            <i className="fa-solid fa-pen"></i>
-              {isEditingAddress ? 'Save' : 'Edit'}
+            <button
+              className="edit"
+              onClick={() => setIsEditingAddress(!isEditingAddress)}
+            >
+              <i className="fa-solid fa-pen"></i>
+              {isEditingAddress ? "Save" : "Edit"}
             </button>
           </div>
         </div>

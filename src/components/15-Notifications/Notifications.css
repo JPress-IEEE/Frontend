@@ -1,0 +1,142 @@
+/* Base styles for notifications container */
+.Notifications .content-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 3.375rem 3.25rem;
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.285);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Profile image styles */
+  .Notifications .profile-image-container {
+    box-sizing: border-box;
+    display: block;
+    width: 5.3125rem;
+    height: 5.3125rem;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Article content styles */
+  .Notifications .article-snippet {
+    flex: 1;
+    margin-left: 2.25rem;
+    word-wrap: break-word;
+  }
+  
+  .Notifications .content-block {
+    color: black;
+    text-align: left;
+  }
+  
+  .Notifications .highlighted-text-block {
+    font: 600 1.5rem Poppins, sans-serif;
+    color: #f26a27;
+    text-align: left;
+  }
+  
+  .Notifications .text-block-style {
+    font: 500 1.2rem Poppins, sans-serif;
+  }
+  
+  .Notifications .time-posted-text-style {
+    margin-top: 1rem;
+    font: 400 1rem Poppins, sans-serif;
+    color: #939da8;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Adjustments for tablets and small laptops */
+  @media (max-width: 1024px) {
+    .Notifications .content-container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    
+    .Notifications .profile-image-container {
+      width: 4rem;
+      height: 4rem;
+    }
+    
+    .Notifications .article-snippet {
+      margin-left: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .Notifications .highlighted-text-block {
+      font-size: 1.25rem;
+    }
+    
+    .Notifications .text-block-style {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Adjustments for mobile devices */
+  @media (max-width: 768px) {
+    .Notifications .content-container {
+      padding: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .Notifications .profile-image-container {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    
+    .Notifications .article-snippet {
+      margin-left: 1rem;
+    }
+    
+    .Notifications .highlighted-text-block {
+      font-size: 1rem;
+    }
+    
+    .Notifications .text-block-style {
+      font-size: 1rem;
+    }
+    
+    .Notifications .time-posted-text-style {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Further adjustments for smaller mobile screens */
+  @media (max-width: 480px) {
+    .Notifications .content-container {
+      padding: 1rem;
+      flex-direction: column;
+    }
+    
+    .Notifications .profile-image-container {
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    .Notifications .article-snippet {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+    
+    .Notifications .highlighted-text-block {
+      font-size: 0.9rem;
+    }
+    
+    .Notifications .text-block-style {
+      font-size: 0.9rem;
+    }
+    
+    .Notifications .time-posted-text-style {
+      font-size: 0.8rem;
+    }
+  }
+  

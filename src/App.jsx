@@ -24,6 +24,7 @@ import Offers from "./components/12-Offers/Offers";
 import Profile from "./components/11-Profile/Profile";
 import My_Posts from "./components/13-My_Posts/My_Posts";
 import Service_Provider from "./components/14-Service_Provider/Service_Provider";
+import Notifications from "./components/15-Notifications/Notifications";
   
 function HomeLayout() {
   return (
@@ -35,8 +36,7 @@ function HomeLayout() {
       <WhyJPress />
       <Review />
       <FAQItem />
-    
-        </>
+         </>
   );
 }
 
@@ -73,6 +73,8 @@ function App() {
         <Route path="/Profile" element={<Profile/>} />
         <Route path="/My_Posts" element={<My_Posts posts={posts} />} />
         <Route path="/Service_Provider" element={<Service_Provider/>} />
+        <Route path="/Notifications" element={<Notifications/>} />
+
 
 
 
