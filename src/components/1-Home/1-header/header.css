@@ -93,6 +93,7 @@
     text-align: center;
     transform: translateY(-200%);
     transition: 0.3s ease-in-out;
+    padding-top: 100px;
   }
   nav ul li {
     margin: 15px;
@@ -145,6 +146,7 @@
 /* Styling for the popup */
 .notification-popup {
   position: absolute;
+
   top: 80px; /* Adjust based on the height of your header */
   right: 175px; /* Aligned to the right of the screen */
   width: 40%;
@@ -279,14 +281,26 @@
   background-color: var(--accent-hover);
 }
 
+@media (max-width: 640px) {
+  .header .btn #bbt {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    top: 100px;
+    width: 100%;
+    right: 0;
+    padding: 10px 0;
 
+    transform: translateY(-500%);
+    transition: 0.3s ease-in-out;
+  }
+  .header .btn #bbt.active {
+    transform: translateY(-0px);
+  }
+}
 
-
-
-
-
-
-
-
-
- 
+.header .btn #bbt {
+  display: flex;
+  gap: 20px;
+}

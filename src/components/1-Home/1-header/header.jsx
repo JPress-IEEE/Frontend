@@ -23,54 +23,6 @@ function Header({ isLoggedIn }) {
       content: "Curabitur non nulla sit amet.",
       time: "1 hour ago",
     },
-    {
-      id: 3,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 4,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 5,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 6,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 7,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 8,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 8,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
-    {
-      id: 8,
-      author: "Jane Doe",
-      content: "Curabitur non nulla sit amet.",
-      time: "1 hour ago",
-    },
     // Add more messages here
   ];
 
@@ -104,22 +56,32 @@ function Header({ isLoggedIn }) {
         <nav>
           <ul className={active ? "active" : ""}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setActive(false)}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to={isLoggedIn ? "/Offers" : "/contact_us"}>
+              <Link
+                to={isLoggedIn ? "/Offers" : "/contact_us"}
+                onClick={() => setActive(false)}
+              >
                 {isLoggedIn ? "Offers" : "Contact Us"}
               </Link>
             </li>
             <li>
-              <Link to="/Services">Services</Link>
+              <Link to="/Services" onClick={() => setActive(false)}>
+                Services
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className="btn">
           {isLoggedIn ? (
-            <div style={{ display: "flex", alignItems: "center", gap: "30px" }} className="user-info">
+            <div
+              style={{ display: "flex", alignItems: "center", gap: "30px" }}
+              className="user-info"
+            >
               <div className="icon">
                 <i className="fa-regular fa-bell"></i>
                 <i
@@ -128,21 +90,38 @@ function Header({ isLoggedIn }) {
                 ></i>
               </div>
               <Link to="/Profile">
-              <img src="img/Review-1.jpeg" alt="User" className="user-image" />
-
-              
+                <img
+                  src="img/Review-1.jpeg"
+                  alt="User"
+                  className="user-image"
+                />
               </Link>
             </div>
           ) : (
-            <>
-              <Link to="/sign-up" className="login-btn">Sign up</Link>
-              <Link to="/Taske" className="Taske-btn">Become a Tasker</Link>
-            </>
+            <div id="bbt" className={active ? "active" : ""}>
+              <Link
+                onClick={() => setActive(false)}
+                to="/sign-up"
+                className="login-btn"
+              >
+                Sign up
+              </Link>
+              <Link
+                onClick={() => setActive(false)}
+                to="/Taske"
+                className="Taske-btn"
+              >
+                Become a Tasker
+              </Link>
+            </div>
           )}
         </div>
 
         <div className="menus">
-          <i onClick={() => setActive(!active)} className="fa-solid fa-bars"></i>
+          <i
+            onClick={() => setActive(!active)}
+            className="fa-solid fa-bars"
+          ></i>
         </div>
       </div>
 
@@ -185,11 +164,19 @@ function Header({ isLoggedIn }) {
 
             <div className="footer">
               {!showAll ? (
-                <a href="#" className="show-all" onClick={() => setShowAll(true)}>
+                <a
+                  href="#"
+                  className="show-all"
+                  onClick={() => setShowAll(true)}
+                >
                   <i className="fa-solid fa-chevron-right"></i> Show all
                 </a>
               ) : (
-                <a href="#" className="show-all" onClick={() => setShowAll(false)}>
+                <a
+                  href="#"
+                  className="show-all"
+                  onClick={() => setShowAll(false)}
+                >
                   <i className="fa-solid fa-chevron-left"></i> Show less
                 </a>
               )}
