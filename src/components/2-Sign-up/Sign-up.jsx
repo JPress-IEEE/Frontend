@@ -34,7 +34,7 @@ export default function Sign({ setIsLoggedIn }) {
     }
 
     try {
-        const response = await fetch("http://localhost:5175/api/auth/signup", {
+        const response = await fetch("http://localhost:5176/api/auth/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export default function Sign({ setIsLoggedIn }) {
         const data = await response.json();
         console.log("Sign-up Data:", data);
         const { accessToken, refreshToken, userId } = data; // Destructure directly
-        const clientResponse = await fetch("http://localhost:5175/api/client", {
+        const clientResponse = await fetch("http://localhost:5176/api/client", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
